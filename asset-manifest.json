@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/my-first-react-webb-app/static/css/main.b11ec1ae.css",
+    "main.js": "/my-first-react-webb-app/static/js/main.862550c7.js",
+    "index.html": "/my-first-react-webb-app/index.html",
+    "main.b11ec1ae.css.map": "/my-first-react-webb-app/static/css/main.b11ec1ae.css.map",
+    "main.862550c7.js.map": "/my-first-react-webb-app/static/js/main.862550c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b11ec1ae.css",
+    "static/js/main.862550c7.js"
+  ]
+}
