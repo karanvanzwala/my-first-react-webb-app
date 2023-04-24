@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.animation {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.box {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    top: 10%;
+    left: 10%;
+  }
+
+  25% {
+    top: 10%;
+    left: 70%;
+  }
+
+  50% {
+    top: 70%;
+    left: 70%;
+  }
+
+  75% {
+    top: 70%;
+    left: 10%;
+  }
+
+  100% {
+    top: 10%;
+    left: 10%;
+  }
+}
+
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animation:hover .box {
+  animation-play-state: paused;
+}
+
+.animation:hover .emoji {
+  animation-play-state: paused;
+  transform: scale(1.5);
+}
